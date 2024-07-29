@@ -4,9 +4,15 @@
 //7/28/24.
 
 #include <iostream>
+#include<cmath>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+template <typename T>
+T half(T value){
+    return value/2;
+}
+
+template <>
+int half<int>(int value) {
+    return static_cast<int>(round(static_cast <double>(value))
 }
