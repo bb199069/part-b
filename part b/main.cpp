@@ -1,6 +1,6 @@
 //Branden Bowling
 // CIS 1202
-//  part b
+// part b
 //7/28/24.
 
 #include <iostream>
@@ -14,5 +14,12 @@ T half(T value){
 
 template <>
 int half<int>(int value) {
-    return static_cast<int>(round(static_cast <double>(value))
+    return static_cast<int>(round(static_cast <double>(value)/2));
+}
+int main(){
+    cout<< "half(7.0) =" << half(7.0)<<endl;
+    cout<< "half(5.0f) = " << half(5.0f) <<endl;
+    cout<< "half(3) = " << half (3)<< endl;
+    cout<<"half(8) =" <<half(8)<<endl;
+    return 0;
 }
